@@ -1,0 +1,134 @@
+<div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav">
+        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand page-scroll" href="#">Apolux Led</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNav">
+      <ul class=" nav navbar-nav pull-right">
+        <li><a (click)="scrollTo('portfolio')" class="page-scroll">Produtos</a></li>
+        <li><a (click)="scrollTo('contact')" class="page-scroll">Sobre</a></li>
+        <li><a (click)="scrollTo('contact')" class="page-scroll">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<section class="banner">
+  <div class="container">
+    <h3>Uma frase para o título</h3>
+    <p>uma frase para o subtítulo. <br /> </p>
+  </div>
+</section>
+
+<div class="abt" id="about">
+  <div class="jumbotron">
+    <div class="container">
+      <h3>Temos tudo que você precisa</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+
+      <a href="#portfolio" class="btn btn-default">Confira!</a>
+    </div>
+  </div>
+</div>
+<!--End ofAbout-->
+
+<!--PortFolio-->
+
+<div class="no-padding text-center" id="portfolio">
+  <div class="container">
+    <h1>Portfolio</h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <div class=" col-6 col-lg-4 col-sm-6">
+        <img src="https://abilux.com.br/images/premios/projetos/vencedores/2017/001_residencial.jpg" class="img-thumbnail"
+          alt="Project-1" width="100%" height="auto">
+      </div>
+      <div class="col-6 col-lg-4 col-sm-6">
+        <img src="https://abilux.com.br/images/premios/projetos/vencedores/2017/001_residencial.jpg" class="img-thumbnail"
+          alt="Project-1" width="100%" height="auto">
+      </div>
+      <div class="col-6 col-lg-4 col-sm-6">
+        <img src="https://abilux.com.br/images/premios/projetos/vencedores/2017/001_residencial.jpg" class="img-thumbnail"
+          alt="Project-1" width="100%" height="auto">
+      </div>
+    </div>
+
+    <div class="row no-gutter">
+      <div class=" col-6 col-lg-4 col-sm-6">
+        <img
+          src="https://plantasdecasas.com/storage/2015/12/Luminot%C3%A9cnica-ilumina%C3%A7%C3%A3o-de-sala-de-estar-750.jpg"
+          alt="Project-1" width="100%" height="auto">
+      </div>
+      <div class="col-6 col-lg-4 col-sm-6">
+        <img
+          src="https://plantasdecasas.com/storage/2015/12/Luminot%C3%A9cnica-ilumina%C3%A7%C3%A3o-de-sala-de-estar-750.jpg"
+          class="img-thumbnail" alt="Project-1" width="100%" height="auto">
+      </div>
+      <div class="col-6 col-lg-4 col-sm-6">
+        <img
+          src="https://plantasdecasas.com/storage/2015/12/Luminot%C3%A9cnica-ilumina%C3%A7%C3%A3o-de-sala-de-estar-750.jpg"
+          alt="Project-1" width="100%" height="auto">
+      </div>
+    </div>
+  </div>
+</div>
+<!--End of Portfolio-->
+
+<div class="contact" id="contact">
+  <div class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h1>Entre em contato!</h1>
+          <p class="my-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+        </div>
+        <div class="padded">
+          <div class="col-lg-4 col-lg-offset-2 text-center">
+            <i class="fa fa-phone fa-3x sr-contact"></i>
+            <p>9999999999</p>
+          </div>
+
+          <div class="col-lg-4 text-center">
+            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+            <p><a href="mailto:your-email@your-domain.com">wagnerpaz@apoluxled.com.br</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End Of Contact-->
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 text-center">
+        <h3>Sobre a página</h3>
+        <p>Feita por: Wagner Buzinari</p>
+
+      </div>
+      <div class="col-sm-6 text-center">
+        <h3>Nossas Redes</h3>
+        <ul class="list-icon">
+          <li><a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a></li>
+          <li><a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a></li>
+          <li><a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a></li>
+          <li><a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+
+
+<router-outlet></router-outlet>
