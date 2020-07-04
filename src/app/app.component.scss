@@ -7,16 +7,23 @@ section{
 }
 .banner{
   width:100%;
-  background:url('https://www.emporiotambo.com.br/pub/media/resized/1300x800/ves/blog/xlampada-pendente.jpg.pagespeed.ic.ASzFwc0UGL.jpg') no-repeat;
+  background:url('../assets/images/banner.jpg') no-repeat;
   background-size:cover;
   background-position:center;
   min-height:600px;
   
 }
 
+.logo{
+  height: 50px;
+}
+.logos{
+  background-color: black;
+}
+
 .proj-banner{
   width:100%;
-  background:url('../assets/proj1.jpg') no-repeat;
+  background:url('../assets/images/proj1.jpg') no-repeat;
   background-size:cover;
   background-position:center;
   min-height:600px;
