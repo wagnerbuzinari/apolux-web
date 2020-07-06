@@ -20,6 +20,11 @@ export class AppComponent implements OnInit {
     });
   }
 
+  ngAfterViewInit(){
+    $('#overlay').fadeOut('1000');
+  }
+
+
   scrollTo(element) {
     console.log(element)
     $([document.documentElement, document.body]).animate({

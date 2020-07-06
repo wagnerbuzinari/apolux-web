@@ -7,12 +7,22 @@ section{
 }
 .banner{
   width:100%;
-  background:url('../assets/images/banner.jpg') no-repeat;
+  background:url('../assets/images/banner.png') no-repeat;
   background-size:cover;
   background-position:center;
   min-height:600px;
-  
 }
+.banner::after{
+  opacity: 0.7;
+}
+
+.logo-apolux{
+  height: 100px;
+}
+
+.navbar-nav li a {
+  line-height: 50px;
+ }
 
 .logo{
   height: 50px;
@@ -75,7 +85,7 @@ ul.dropdown-menu {
   text-align:center;
 }
 .abt .jumbotron  {
-  background-color:#e67e22;
+  background-color:#ed6a53;
 }
 .abt h3{
   
