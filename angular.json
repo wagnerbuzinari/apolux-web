@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "apolux-web"
+  "defaultProject": "apolux-web",
+  "cli": {
+    "analytics": "a3fa2064-79f8-4065-ad05-bb00d3153133"
+  }
 }
