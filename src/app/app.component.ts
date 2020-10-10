@@ -18,9 +18,29 @@ export class AppComponent implements OnInit {
         $('.opaque-navbar').removeClass('opaque');
       }
     });
+
+    $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+      if (!$(this).next().hasClass('show')) {
+        $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+      }
+      var $subMenu = $(this).next('.dropdown-menu');
+      $subMenu.toggleClass('show');
+    
+    
+      $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+        $('.dropdown-submenu .show').removeClass('show');
+      });
+    
+    
+      return false;
+    });
+
+    if (location.protocol === 'http:') {
+      window.location.href = location.href.replace('http', 'https');
+    }
   }
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     $('#overlay').fadeOut('1000');
   }
 
@@ -30,5 +50,9 @@ export class AppComponent implements OnInit {
     $([document.documentElement, document.body]).animate({
       scrollTop: $(`#${element}`).offset().top
     }, 1000);
+  }
+
+  openFile(fileName) {
+    window.open("/assets/" + fileName);
   }
 }

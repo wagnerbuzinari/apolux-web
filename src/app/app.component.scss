@@ -69,16 +69,15 @@ section{
   font-weight:700;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .opaque-navbar{
   background-color:rgba(0,0,0,0);
   border-bottom:1px solid #eee;
   
   transition : background-color 0.5s ease 0s;
-}
-.opaque-navbar.opaque {
-    background-color:black ;
-    border:0px;    
-    transition: background-color .5s ease 0s;
 }
 
 ul.dropdown-menu {
@@ -189,7 +188,6 @@ ul.dropdown-menu {
 a{
 	text-decoration: none;
 }
-
 
 }
 
