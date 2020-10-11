@@ -80,6 +80,12 @@ section{
   transition : background-color 0.5s ease 0s;
 }
 
+.opaque-navbar.opaque {
+  background-color:black ;
+  border:0px;    
+  transition: background-color .5s ease 0s;
+}
+
 ul.dropdown-menu {
     background-color: black;
 }
