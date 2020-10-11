@@ -19,9 +19,9 @@ export class AppComponent implements OnInit {
       }
     });
 
-    // if (location.protocol === 'http:') {
-    //   window.location.href = location.href.replace('http', 'https');
-    // }
+    if (location.protocol === 'http:') {
+      window.location.href = location.href.replace('http', 'https');
+    }
   }
 
   ngAfterViewInit() {
