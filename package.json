@@ -25,7 +25,7 @@
     "@angular/router": "~9.1.1",
     "@angular-devkit/build-angular": "~0.901.1",
     "bootstrap": "^4.5.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jquery": "^3.5.1",
     "path": "^0.12.7",
     "rxjs": "~6.5.4",
